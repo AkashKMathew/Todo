@@ -15,7 +15,7 @@ type TodoItemProps = {
 export function TodoItem({ id, title, complete, toggleTodo, deleteTodo}: TodoItemProps) {
   const router = useRouter()
   const refreshPage= () =>{
-    router.push('/')
+    router.refresh()
   }
   return (
     <li className="flex gap-1 items-center">
